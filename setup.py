@@ -7,4 +7,5 @@ setup(
     author="ghettoDdOS",
     author_email="pen.egor2002@gmail.com",
     packages=["wagtail_ckeditor"],
+    include_package_data=True,
 )
