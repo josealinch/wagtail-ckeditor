@@ -25,6 +25,8 @@ Ensure that you have this entry in your `settings.py` file.
 There are several options you can add to your `settings.py` file.
 
 - CKEditor settings, defaults to:
+
+.. code-block:: python
   WAGTAIL_CKEDITOR_CONFIG = getattr(settings, 'WAGTAIL_CKEDITOR_CONFIG',
   {'language': settings.LANGUAGE_CODE,
   'skin': 'moono-dark',
