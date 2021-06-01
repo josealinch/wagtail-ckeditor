@@ -7,4 +7,8 @@ CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here. For example:
 	// config.language = 'fr';
 	// config.uiColor = '#AADC6E';
+	config.coreStyles_bold = {
+    element: 'span',
+    styles: { 'font-weight': 'bold' }
+  }
 };
