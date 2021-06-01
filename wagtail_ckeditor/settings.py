@@ -28,13 +28,16 @@ WAGTAIL_CKEDITOR_LINE_HEIGHT = "1px; 2px; 3px; 5px; 10px; 15px"
 WAGTAIL_CKEDITOR_LINE_HEIGHT += getattr(
     settings, "WAGTAIL_CKEDITOR_LINE_HEIGHT", ""
 )
-
+WAGTAIL_CKEDITOR_SKIN = getattr(
+    settings, "WAGTAIL_CKEDITOR_SKIN", "moono-lisa"
+)
 WAGTAIL_CKEDITOR_CONFIG = getattr(
     settings,
     "WAGTAIL_CKEDITOR_CONFIG",
     {
         "language": "en",
-        "skin": "moono-dark",
+        "skin": WAGTAIL_CKEDITOR_SKIN,
+        "uiColor": "#AADC6E",
         "font_names": WAGTAIL_CKEDITOR_FONTS,
         "fontSize_sizes": WAGTAIL_CKEDITOR_FONT_SIZES,
         "extraPlugins": "lineheight,richcombo",
