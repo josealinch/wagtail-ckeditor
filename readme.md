@@ -23,32 +23,15 @@ Ensure that you have this entry in your `settings.py` file.
 
 There are several options you can add to your `settings.py` file.
 
-- CKEditor settings, defaults to:
-
+To add new fonts and font-weight, font-size, line-height values use settings file.
+Example
 ```
-  WAGTAIL_CKEDITOR_CONFIG = getattr(settings, 'WAGTAIL_CKEDITOR_CONFIG',
-  {'language': settings.LANGUAGE_CODE,
-  'skin': 'moono-dark',
-  'toolbar': [
-  {'name': 'basicstyles',
-  'items': ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript']},
-  {'name': 'clipboard',
-  'items': ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo',
-  'Redo']},
-  {'name': 'paragraph',
-  'items': ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-',
-  'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock']},
-  {'name': 'links', 'items': ['Link', 'Unlink', 'Anchor']},
-  '/',
-  {'name': 'styles', 'items': ['Styles', 'Format', 'Font', 'FontSize']},
-  {'name': 'insert',
-  'items': ['Image', 'Mathjax' if WAGTAIL_CKEDITOR_USE_MATH else '-', 'Table',
-  'HorizontalRule', 'SpecialChar']},
-  {'name': 'colors', 'items': ['TextColor', 'BGColor']},
-  {'name': 'document', 'items': ['Maximize', '-', 'Source']},
-  ]
-  })
-  ```
+WAGTAIL_CKEDITOR_FONTS = "Inter;Golos;"
+WAGTAIL_CKEDITOR_FONT_SIZES = "96/96px; 128/128px;"
+WAGTAIL_CKEDITOR_LINE_HEIGHT = "32px;36px;"
+WAGTAIL_CKEDITOR_SKIN = "moono-lisa"
+WAGTAIL_CKEDITOR_FONT_WEIGHT = "965;970;"
+```
   
   Inspired by:
 
