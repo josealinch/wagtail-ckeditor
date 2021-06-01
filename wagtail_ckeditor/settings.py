@@ -13,8 +13,13 @@ WAGTAIL_CKEDITOR_FONTS = """
     Trebuchet MS/Trebuchet MS, Helvetica, sans-serif;\
     Verdana/Verdana, Geneva, sans-serif;\
 """
-
 WAGTAIL_CKEDITOR_FONTS += getattr(settings, "WAGTAIL_CKEDITOR_FONTS", "")
+
+WAGTAIL_CKEDITOR_FONT_SIZES = "8/8px;9/9px;10/10px;11/11px;12/12px;14/14px;16/16px;18/18px;20/20px;22/22px;24/24px;26/26px;28/28px;36/36px;48/48px;72/72px;"
+
+WAGTAIL_CKEDITOR_FONT_SIZES += getattr(
+    settings, "WAGTAIL_CKEDITOR_FONT_SIZES", ""
+)
 
 WAGTAIL_CKEDITOR_CONFIG = getattr(
     settings,
@@ -23,6 +28,7 @@ WAGTAIL_CKEDITOR_CONFIG = getattr(
         "language": "en",
         "skin": "moono-dark",
         "font_names": WAGTAIL_CKEDITOR_FONTS,
+        "fontSize_sizes": WAGTAIL_CKEDITOR_FONT_SIZES,
         "toolbar": [
             {
                 "name": "basicstyles",
