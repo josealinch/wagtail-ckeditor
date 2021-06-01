@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name="wagtail-ckeditor",
-    version="1.0",
+    version="1.1",
     description="CKEditor widget for Wagtail CMS",
     author="ghettoDdOS",
     author_email="pen.egor2002@gmail.com",
