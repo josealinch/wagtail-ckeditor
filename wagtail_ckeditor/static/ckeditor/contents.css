@@ -13,7 +13,7 @@ body
 	color: #333;
 
 	/* Remove the background color to make it transparent */
-	background-color: #55688d;
+	background-color: #55688d !important;
 
 	margin: 20px;
 }
@@ -22,6 +22,7 @@ body
 {
 	font-size: 13px;
 	line-height: 1.6;
+	background-color: #55688d !important;
 
 	/* Fix for missing scrollbars with RTL texts. (#10488) */
 	word-wrap: break-word;
