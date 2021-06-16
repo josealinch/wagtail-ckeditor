@@ -3,12 +3,13 @@
  * For licensing, see LICENSE.md or http://ckeditor.com/license
  */
 
-CKEDITOR.editorConfig = function( config ) {
-	// Define changes to default configuration here. For example:
-	// config.language = 'fr';
-	// config.uiColor = '#AADC6E';
-	config.coreStyles_bold = {
-    element: 'span',
-    styles: { 'font-weight': 'bold' }
-  }
-};
+CKEDITOR.editorConfig = function(config) {
+  // Define changes to default configuration here. For example:
+  // config.language = 'fr';
+  // config.uiColor = '#AADC6E';
+  // config.coreStyles_bold = {
+  //   element: 'span',
+  //   styles: { 'font-weight': 'bold' }
+  // }
+  config.allowedContent = true
+}
