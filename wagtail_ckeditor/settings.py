@@ -38,9 +38,6 @@ WAGTAIL_CKEDITOR_FONT_WEIGHT = (
 WAGTAIL_CKEDITOR_FONT_WEIGHT += getattr(
     settings, "WAGTAIL_CKEDITOR_FONT_WEIGHT", ""
 )
-WAGTAIL_CKEDITOR_ALLOWED_CONTENT = getattr(
-    settings, "WAGTAIL_CKEDITOR_ALLOWED_CONTENT", "false"
-)
 
 WAGTAIL_CKEDITOR_CONFIG = getattr(
     settings,
@@ -55,7 +52,6 @@ WAGTAIL_CKEDITOR_CONFIG = getattr(
         "mathJaxLib": "//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML",
         "line_height": WAGTAIL_CKEDITOR_LINE_HEIGHT,
         "font_weight": WAGTAIL_CKEDITOR_FONT_WEIGHT,
-        "allowedContent": WAGTAIL_CKEDITOR_ALLOWED_CONTENT,
         "toolbar": [
             {
                 "name": "basicstyles",
