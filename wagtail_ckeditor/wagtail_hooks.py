@@ -29,7 +29,28 @@ def apply_whitelist(features):
             WhitelistRule("q", allow_without_attributes),
             WhitelistRule("ins", allow_without_attributes),
             WhitelistRule("pre", allow_without_attributes),
-            WhitelistRule("addres", allow_without_attributes),
+            WhitelistRule(
+                "addres",
+                attribute_rule(
+                    {
+                        "class": True,
+                        "href": True,
+                        "data-toggle": True,
+                        "style": True,
+                    }
+                ),
+            ),
+            WhitelistRule(
+                "a",
+                attribute_rule(
+                    {
+                        "class": True,
+                        "href": True,
+                        "data-toggle": True,
+                        "style": True,
+                    }
+                ),
+            ),
             WhitelistRule(
                 "div",
                 attribute_rule(
