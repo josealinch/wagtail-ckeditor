@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "wagtail-ckeditor"
-version = "1.0.0"
+version = "1.2.0"
 description = "Rich-text editor for Django Wagtail CMS"
 authors = ["penkhasoveg <pen.egor2002@gmail.com>"]
 license = "MIT"
