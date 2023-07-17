@@ -26,11 +26,6 @@ ignore = ["E231", "W503", "E731"]
 max-line-length = 79
 exclude="*/migrations/*"
 
-[tool.poetry.dependencies]
-python = "^3.7"
-wagtail = "^2.11.2"
-Django = "^3.1.5"
-
 [tool.poetry.dev-dependencies]
 flake8 = "^4.0.1"
 black = "^22.3.0"
